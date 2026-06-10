@@ -11,6 +11,8 @@ This project is a simple reimplementation of the Unix/Linux `ls` command, that I
 - `ls` (for listing directory contents)
 - `ls -a` (for including dotfiles too)
 
+> I want to implement more eventually.
+
 ---
 
 ## References
