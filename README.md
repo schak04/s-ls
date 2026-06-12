@@ -17,7 +17,8 @@ This project is a simple reimplementation of the Unix/Linux `ls` command, that I
 
 ## References
 
-- man pages: `ls`
+- man pages: `ls`, `opendir`, `readdir`, `closedir`, `dirent.h`
+- strace: `ls`
 
 ---
 
