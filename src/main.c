@@ -4,7 +4,11 @@
 int main(int argc, char* argv[]) {
     char* arg = argc > 1 ? argv[1] : ".";
 
-    printf("%s\n", arg);
+    DIR* d = opendir(arg);
+    struct dirent* rd = readdir(d);
+
+    printf("%p\n", d);
+    printf("%p\n", rd);
 
     return 0;
 }
