@@ -5,10 +5,13 @@ int main(int argc, char* argv[]) {
     char* arg = argc > 1 ? argv[1] : ".";
 
     DIR* d = opendir(arg);
-    struct dirent* rd = readdir(d);
+    if (!d) {
+        fprintf(stderr, "Error opening directory: %s\n", arg);
+    }
 
-    printf("%p\n", d);
-    printf("%p\n", rd);
+    // printf("%p\n", d);
+    struct dirent* rd = readdir(d);
+    printf("%s\n", rd->d_name);
 
     return 0;
 }
