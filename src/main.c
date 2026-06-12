@@ -1,12 +1,16 @@
 #include <dirent.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(int argc, char* argv[]) {
     char* arg = argc > 1 ? argv[1] : ".";
 
     DIR* d = opendir(arg);
     if (!d) {
-        fprintf(stderr, "Error opening directory: %s\n", arg);
+        // fprintf(stderr, "Error opening directory: %s\n", arg);
+        char* errMsg = "Error opening directory ";
+        strcat(errMsg, arg);
+        perror(errMsg);
     }
 
     // printf("%p\n", d);
