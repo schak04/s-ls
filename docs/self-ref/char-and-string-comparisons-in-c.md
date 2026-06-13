@@ -1,11 +1,4 @@
-# Char and String comparison in C
-
-## When it comes to characters
-
-We can simply do `char1 == char2` for comparing their contents.
-
-## BUT
-## When it comes to strings
+# String comparison in C
 
 Wrong: `str1 == str2` -> as this compares addresses
 
