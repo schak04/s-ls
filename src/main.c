@@ -17,7 +17,8 @@ int main(int argc, char* argv[]) {
 
     // printf("%p\n", d);
     struct dirent* rd = readdir(d);
-    printf("%s\n", rd->d_name);
+    printf("argument passed: %s\n", arg);
+    printf("rd->d_name: %s\n", rd->d_name);
 
     return 0;
 }
