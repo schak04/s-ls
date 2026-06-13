@@ -16,8 +16,8 @@ int main(int argc, char* argv[]) {
     }
 
     struct dirent* rd = NULL;
-    while (rd = readdir(d)) {
-        if (strcmp(rd->d_name, ".") != 0 && strcmp(rd->d_name, "..") != 0) {
+    while ((rd = readdir(d)) != NULL) {
+        if (rd->d_name[0] != '.') {
             printf("%s\n", rd->d_name);
         }
     }
