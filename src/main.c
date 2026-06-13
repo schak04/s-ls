@@ -15,9 +15,11 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    struct dirent* rd;
+    struct dirent* rd = NULL;
     while (rd = readdir(d)) {
-        printf("%s\n", rd->d_name);
+        if (strcmp(rd->d_name, ".") != 0 && strcmp(rd->d_name, "..") != 0) {
+            printf("%s\n", rd->d_name);
+        }
     }
 
     return 0;
