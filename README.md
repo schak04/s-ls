@@ -25,6 +25,7 @@ This project is a simple reimplementation of the Unix/Linux `ls` command, that I
     - `dirent.h`
     - `fprintf`
     - `perror` 
+    - `strcmp`
 - strace: `ls`
 
 ---
