@@ -11,6 +11,8 @@ int main(int argc, char* argv[]) {
         char* errMsg = "Error opening directory ";
         strcat(errMsg, arg);
         perror(errMsg);
+
+        return 1;
     }
 
     // printf("%p\n", d);
