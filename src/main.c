@@ -8,7 +8,7 @@ int main(int argc, char* argv[]) {
     DIR* d = opendir(arg);
     if (!d) {
         // fprintf(stderr, "Error opening directory: %s\n", arg);
-        char* errMsg = "Error opening directory ";
+        char errMsg[40] = "Error opening directory ";
         strcat(errMsg, arg);
         perror(errMsg);
 
