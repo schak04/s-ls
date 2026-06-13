@@ -26,6 +26,8 @@ This project is a simple reimplementation of the Unix/Linux `ls` command, that I
     - `fprintf`
     - `perror` 
     - `strcmp`
+    - `strcat`
+    - `strcpy`
 - strace: `ls`
 
 ---
