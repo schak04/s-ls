@@ -15,10 +15,10 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    // printf("%p\n", d);
-    struct dirent* rd = readdir(d);
-    printf("argument passed: %s\n", arg);
-    printf("rd->d_name: %s\n", rd->d_name);
+    struct dirent* rd;
+    while (rd = readdir(d)) {
+        printf("%s\n", rd->d_name);
+    }
 
     return 0;
 }
