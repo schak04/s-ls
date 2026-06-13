@@ -8,6 +8,8 @@
 | 5       | File formats (`passwd`, `fstab`)                  |
 | 7       | Miscellaneous (standards, overviews)              |
 
+---
+
 ## POSIX Sections (POSIX Programmer's Manual)
 
 | Section | Meaning                 |
@@ -16,6 +18,10 @@
 | 1P      | POSIX commands          |
 | 3P      | POSIX library functions |
 
+---
+
 ## Useful Commands
 
-`man -aw opendir`: shows all matching man pages and their sections
+- `man -aw something`: shows all matching man pages and their sections
+- `man -k something`: searches the man page db for pages whose name or desc matches `something`
+---
