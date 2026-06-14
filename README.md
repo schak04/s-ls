@@ -8,8 +8,8 @@ This project is a simple reimplementation of the Unix/Linux `ls` command, that I
 
 ## Commands I plan to implement for now
 
-- `ls` (for listing directory contents)
-- `ls -a` (for including dotfiles too)
+- [x] `ls` (for listing directory contents)
+- [] `ls -a` (for including dotfiles too)
 
 > I want to implement more eventually.
 
