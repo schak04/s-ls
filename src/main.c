@@ -31,22 +31,27 @@ int main(int argc, char* argv[]) {
     char* arg = argc > 1 ? argv[1] : ".";
 
     DIR* d = opendir(arg);
+    struct dirent* rd = NULL;
+
     if (!d) {
         // fprintf(stderr, "Error opening directory: %s\n", arg);
-        char errMsg[40] = "Error opening directory ";
-        strcat(errMsg, arg);
-        perror(errMsg);
-
+        perror("Error opening directory");
         return 1;
     }
-
-    struct dirent* rd = NULL;
 
     size_t dirCountExclDotfiles = 0;  // size_t, since this will be the size of an array
     while ((rd = readdir(d)) != NULL) {
         if (rd->d_name[0] != '.') {
             dirCountExclDotfiles++;
         }
+    }
+    closedir(d);
+
+    d = opendir(arg);
+    rd = NULL;
+    if (!d) {
+        perror("Error opening directory");
+        return 1;
     }
 
     char* dirListExclDotfiles[dirCountExclDotfiles];
