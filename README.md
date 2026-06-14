@@ -9,7 +9,7 @@ This project is a simple reimplementation of the Unix/Linux `ls` command, that I
 ## Commands I plan to implement for now
 
 - [x] `ls` (for listing directory contents)
-- [] `ls -a` (for including dotfiles too)
+- [ ] `ls -a` (for including dotfiles too)
 
 > I want to implement more eventually.
 
