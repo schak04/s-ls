@@ -1,3 +1,8 @@
+/*
+s-ls: A small reimplementation of the Unix/Linux ls command (purely for learning) written in C
+Author: Saptaparno Chakraborty
+*/
+
 #include <dirent.h>
 #include <stdio.h>
 #include <string.h>
