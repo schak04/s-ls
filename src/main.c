@@ -44,7 +44,7 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    size_t dirCountExclDotfiles = 0;  // size_t, since this will be the size of an array
+    size_t dirCountExclDotfiles = 0;
     while ((rd = readdir(d)) != NULL) {
         if (rd->d_name[0] != '.') {
             dirCountExclDotfiles++;
