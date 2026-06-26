@@ -16,7 +16,7 @@ void swapStr(char* str1, char* str2) {
     return;
 }
 
-void sortStrArr(char** strArr, size_t arrSize) {  // bubble sort
+void sortStrArr(char** strArr, size_t arrSize) {
     bool anySwaps;
     for (int i = 0; i < (int)arrSize - 1; i++) {
         anySwaps = false;
